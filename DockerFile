@@ -1,0 +1,4 @@
+FROM openjdk:17
+LABEL maintainer="com.example.AbhilashManagement"
+ADD target/AbhilashManagement-0.0.1-SNAPSHOT.jar AbhilashManagement.jar
+ENTRYPOINT ["java",".jar","AbhilashManagement.jar"]
